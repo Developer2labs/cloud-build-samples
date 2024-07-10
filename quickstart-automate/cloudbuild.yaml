@@ -17,7 +17,7 @@ steps:
 - name: golang
   script: go run quickstart-automate/main.go
 options:
-  logsBucket: "ecdedemobucket"
+    logging: CLOUD_LOGGING_ONLY
 #steps:
 # - name: golang
 #   args: ['go', 'run', 'quickstart-automate/main.go']

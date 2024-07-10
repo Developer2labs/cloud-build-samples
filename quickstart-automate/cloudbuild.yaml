@@ -13,10 +13,9 @@
 # limitations under the License.
 
 # [START cloudbuild_quickstart_automate]
-#steps:
+steps:
 - name: golang
-  entrypoint: "sh"
-  args: ["-c", "go run quickstart-automate/main.go"]
+  script: go run quickstart-automate/main.go
 options:
   logsBucket: "ecdedemobucket"
 #steps:
